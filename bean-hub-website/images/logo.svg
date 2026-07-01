@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <path id="topArcBH" d="M 59,251.3 A 150,150 0 1 1 341,251.3" />
+    <path id="bottomArcBH" d="M 59,148.7 A 150,150 0 1 0 341,148.7" />
+  </defs>
+
+  <!-- outer badge -->
+  <circle cx="200" cy="200" r="192" fill="#153832"/>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#c9992e" stroke-width="4"/>
+  <circle cx="200" cy="200" r="176" fill="none" stroke="#c9992e" stroke-width="1.5"/>
+
+  <!-- divider ring around center emblem -->
+  <circle cx="200" cy="200" r="112" fill="none" stroke="#c9992e" stroke-width="1.5"/>
+
+  <!-- side dots -->
+  <circle cx="45" cy="200" r="3.2" fill="#c9992e"/>
+  <circle cx="355" cy="200" r="3.2" fill="#c9992e"/>
+
+  <!-- horizontal divider lines left/right -->
+  <line x1="24" y1="200" x2="88" y2="200" stroke="#c9992e" stroke-width="1.5"/>
+  <line x1="312" y1="200" x2="376" y2="200" stroke="#c9992e" stroke-width="1.5"/>
+
+  <!-- arched text -->
+  <text fill="#c9992e" font-family="Georgia, 'Playfair Display', serif" font-size="34" letter-spacing="6" text-anchor="middle">
+    <textPath href="#topArcBH" startOffset="50%">BEANS HUB</textPath>
+  </text>
+  <text fill="#c9992e" font-family="Georgia, 'Playfair Display', serif" font-size="24" letter-spacing="4" text-anchor="middle">
+    <textPath href="#bottomArcBH" startOffset="50%">COFFEE ROASTERY</textPath>
+  </text>
+
+  <!-- coffee bean cluster -->
+  <g>
+    <!-- back bean (upper right) -->
+    <g transform="translate(220,192) rotate(28)">
+      <ellipse rx="26" ry="42" fill="#c9992e"/>
+      <path d="M 0,-40 C 8,-20 8,20 0,40" fill="none" stroke="#153832" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <!-- left bean -->
+    <g transform="translate(168,208) rotate(-32)">
+      <ellipse rx="24" ry="38" fill="#c9992e"/>
+      <path d="M 0,-36 C 7,-18 7,18 0,36" fill="none" stroke="#153832" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <!-- front-center bean -->
+    <g transform="translate(196,232) rotate(8)">
+      <ellipse rx="22" ry="34" fill="#c9992e"/>
+      <path d="M 0,-32 C 6,-16 6,16 0,32" fill="none" stroke="#153832" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <!-- base bar -->
+    <rect x="156" y="278" width="88" height="12" rx="3" fill="#c9992e"/>
+  </g>
+</svg>
